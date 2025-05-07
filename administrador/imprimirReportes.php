@@ -53,6 +53,11 @@ if (!$resultado) {
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"> <!-- Incluir DataTables CSS -->
     <style>
         /* Estilos para la tabla */
+        .table thead th {
+            background-color:#86541a;
+            color: white;
+            text-align: center;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -80,14 +85,33 @@ if (!$resultado) {
             padding: 5px 10px;
             font-size: 14px;
         }
+    /* Estilo para el botón Descargar Reportes */
+    .btn-descargar {
+        background-color: #4CAF50; /* Verde */
+        color: white; /* Letras blancas */
+        border-color: #4CAF50;
+    }
 
-        /* Estilos para el encabezado */
-        h2 {
-            margin-top: 20px;
-            font-size: 1.5rem;
-            color: #2c3e50;
-        }
-    </style>
+    .btn-descargar:hover {
+        background-color: #45a049; /* Verde más oscuro */
+        border-color: #45a049;
+        color: white; /* Letras blancas */
+    }
+
+    /* Estilo para el botón Refrescar */
+    .btn-refrescar {
+        background-color: #2196F3; /* Azul */
+        color: white; /* Letras blancas */
+        border-color: #2196F3;
+    }
+
+    .btn-refrescar:hover {
+        background-color: #0b7dda; /* Azul más oscuro */
+        border-color: #0b7dda;
+        color: white; /* Letras blancas */
+    }
+</style>
+
 </head>
 
 <body>
@@ -156,9 +180,12 @@ if (!$resultado) {
         </div>
 
         <!-- Botón para descargar reportes -->
-        <button class="btn btn-secondary mt-3" onclick="descargarReportes()">Descargar Reportes</button>
-        <button class="btn btn-secondary mt-3" onclick="window.location.reload();">Refrescar</button>
-
+        <button class="btn btn-descargar mt-3" onclick="descargarReportes()">
+    <i class="fas fa-download"></i> Descargar Reportes
+</button>
+<button class="btn btn-refrescar mt-3" onclick="window.location.reload();">
+    <i class="fas fa-sync-alt"></i> Refrescar
+</button>
         <!-- Modal para visualizar el archivo PDF -->
         <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">

@@ -95,6 +95,10 @@ if (!$resultado) {
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"> <!-- Incluir DataTables CSS -->
     <style>
         /* Estilos para la tabla */
+        .table thead th {
+            background-color:#86541a;
+            color: white;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -122,7 +126,17 @@ if (!$resultado) {
             padding: 5px 10px;
             font-size: 14px;
         }
+    /* Estilo para el botón Refrescar */
+    .btn-refrescar {
+        background-color: #2196F3; /* Azul */
+        color: white; /* Letras blancas */
+        border-color: #2196F3;
+    }
 
+    .btn-refrescar:hover {
+        background-color: #0b7dda; /* Azul más oscuro */
+        border-color: #0b7dda;
+    }
         /* Estilos para el encabezado */
         h2 {
             margin-top: 20px;
@@ -211,7 +225,9 @@ if (!$resultado) {
             </table>
         </div>
         <!-- Botón para refrescar la página -->
-        <button class="btn btn-secondary mt-3" onclick="window.location.reload();">Refrescar</button>
+        <button class="btn btn-refrescar mt-3" onclick="window.location.reload();">
+        <i class="fas fa-sync-alt"></i> Refrescar
+        </button>
 
         <!-- Modal para visualizar el archivo PDF -->
         <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">

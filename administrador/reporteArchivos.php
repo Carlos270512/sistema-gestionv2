@@ -95,6 +95,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../css/font-awesome.css">
     <style>
         /* Estilos para la tabla y el contenedor con scroll */
+        .table thead th {
+            background-color:#86541a;
+            color: white;
+        }
         .table-container {
             width: 100%;
             overflow-x: auto;
@@ -139,6 +143,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             justify-content: center;
             gap: 10px;
         }
+            /* Estilo para el panel de filtros */
+    .panel-heading {
+        background-color: #86541a; /* Color café */
+        color: white; /* Letras blancas */
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .panel-body {
+        background-color: #f9f9f9; /* Fondo claro para el cuerpo del panel */
+        padding: 15px;
+    }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -205,7 +221,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="row">
                         <div class="col-md-12 text-right">
                             <button type="button" class="btn btn-primary" id="aplicarFiltros">Aplicar Filtros</button>
-                            <button type="submit" class="btn btn-danger" id="generarPDF">Generar Excel</button>
+                            <button type="submit" class="btn btn-success" id="generarPDF">Generar Excel</button>
                         </div>
                     </div>
                 </form>

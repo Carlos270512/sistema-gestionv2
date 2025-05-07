@@ -77,7 +77,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .table thead th {
-            background-color: #343a40;
+            background-color:#86541a;
             color: white;
         }
 
@@ -95,14 +95,16 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
         .btn-primary-custom {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
+        background-color: #5a3829; /* Café oscuro */
+        color: white; /* Letras blancas */
+        border-color: #5a3829;
+    }
 
-        .btn-primary-custom:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
-        }
+    .btn-primary-custom:hover {
+        background-color:rgb(197, 169, 79); /* Café más claro */
+        border-color: rgb(197, 169, 79);
+        color: white;
+    }
     </style>
 </head>
 

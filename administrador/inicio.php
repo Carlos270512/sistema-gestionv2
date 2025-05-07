@@ -144,12 +144,11 @@ $resultado = $stmt->get_result();
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"> <!-- Incluir DataTables CSS -->
     <style>
         /* Estilo para los encabezados de la tabla */
-        table thead th {
-            background-color: #2c3e50;
+        .table thead th {
+            background-color:#86541a;
             color: white;
             text-align: center;
         }
-
         /* Estilo para la columna de acciones */
         .btn-actions {
             display: flex;
@@ -181,6 +180,18 @@ $resultado = $stmt->get_result();
             /* Rojo */
             border-color: #dc3545;
         }
+    /* Estilo para el botón Subir Archivo */
+    .btn-primary {
+        background-color: #86541a; /* Color café */
+        color: white; /* Letras blancas */
+        border-color: #86541a;
+    }
+
+    .btn-primary:hover {
+        background-color: #a67c52; /* Café claro */
+        border-color: #a67c52;
+        color: white; /* Letras blancas */
+    }
     </style>
     <!-- PDF.js para visualizar PDF en un modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>

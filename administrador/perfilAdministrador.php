@@ -122,6 +122,18 @@ if (isset($_GET['mensaje']) && isset($_GET['tipoMensaje'])) {
             background-color: #f8f9fa;
             cursor: not-allowed;
         }
+
+        .btn-primary {
+            background-color: #6f4e37;
+            /* Café */
+            border-color: #6f4e37;
+        }
+
+        .btn-primary:hover {
+            background-color: #efc061;
+            /* Café más oscuro */
+            border-color: #5a3829;
+        }
     </style>
 </head>
 
