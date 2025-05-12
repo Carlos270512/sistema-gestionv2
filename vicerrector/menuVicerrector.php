@@ -94,7 +94,7 @@ if (!isset($_SESSION['id_usuario'])) {
             </a>
         </div>
         <div id="content">
-            <iframe id="iframe" src="inicio.php"></iframe>
+            <iframe id="iframe" src="../usuario/CambiarContrasena.php"></iframe>
         </div>
     </div>
     <script>
