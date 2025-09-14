@@ -101,6 +101,7 @@ if (!isset($_SESSION['id_usuario'])) {
             <a href="#" onclick="loadPage('../usuario/acerca.html')">
                 <i class="fas fa-info-circle me-2"></i> Acerca De
             </a>
+            
         </div>
         <div id="content">
             <iframe id="iframe" src="../usuario/CambiarContrasena.php"></iframe>

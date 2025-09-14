@@ -85,6 +85,10 @@ if (!isset($_SESSION['id_usuario'])) {
                 </a>
             </div>
 
+            <a href="#" onclick="loadPage('../administrador/imprimirReportes.php')">
+                <i class="fas fa-file-alt me-2"></i> Descargar Reportes
+            </a>
+
             <!-- Opción Ayuda -->
             
 
